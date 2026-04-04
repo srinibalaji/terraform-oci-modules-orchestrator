@@ -161,6 +161,11 @@ variable "instances_configuration" {
   default = null
 }
 
+variable "storage_configuration" {
+  type    = any
+  default = null
+}
+
 variable "oke_clusters_configuration" {
   type    = any
   default = null
@@ -171,17 +176,12 @@ variable "oke_workers_configuration" {
   default = null
 }
 
+variable "ocvs_configuration" {
+  type    = any
+  default = null
+}
+
 variable "object_storage_configuration" {
-  type    = any
-  default = null
-}
-
-variable "clusters_configuration" {
-  type    = any
-  default = null
-}
-
-variable "workers_configuration" {
   type    = any
   default = null
 }
@@ -236,6 +236,11 @@ variable "instances_dependency" {
   default = null
 }
 
+variable "ocvs_dependency" {
+  type    = any
+  default = null
+}
+
 variable "nlbs_dependency" {
   type    = any
   default = null
@@ -245,4 +250,3 @@ variable "output_path" {
   type    = string
   default = null
 }
-
